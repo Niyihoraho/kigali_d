@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diplomate Hotel - Luxury Stay & Hospitality</title>
+    <meta name="description" content="Experience luxury and comfort at Diplomate Hotel. Book your stay at our premium hotel with world-class amenities and services.">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-sans">
+    <!-- Header -->
+    <header class="absolute w-full z-50 bg-transparent text-white">
+        <!-- Top bar -->
+        <div class="bg-black bg-opacity-50 text-sm">
+            <div class="container mx-auto px-6 py-2 flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="hover:text-red-500 transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-red-500 transition"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="hover:text-red-500 transition"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="hover:text-red-500 transition">Login / Signup</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main navigation -->
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#home" class="flex items-center">
+                    <img src="logo/logo.png" alt="Diplomate Hotel Logo" class="h-12 mr-3">
+                </a>
+                <div class="hidden md:flex items-center space-x-6 text-sm font-medium">
+                    <a href="#home" class="text-red-500 hover:text-white transition">HOME</a>
+                    <a href="#about" class="hover:text-red-500 transition">ABOUT US</a>
+                    <a href="#rooms" class="hover:text-red-500 transition">ROOMS</a>
+                    <a href="#dining" class="hover:text-red-500 transition">DINING</a>
+                    <a href="#conference" class="hover:text-red-500 transition">CONFERENCE</a>
+                    <a href="#garden" class="hover:text-red-500 transition">GARDEN</a>
+                    <a href="#contact" class="hover:text-red-500 transition">CONTACT</a>
+                    <a href="#booking" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-5 rounded-sm transition duration-300">BOOK NOW</a>
+                </div>
+                <button class="md:hidden text-white focus:outline-none" id="mobile-menu-button">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <!-- Mobile menu -->
+            <div class="md:hidden hidden mt-4 bg-black bg-opacity-90 rounded" id="mobile-menu">
+                <a href="#home" class="block py-2 px-4 text-sm hover:bg-red-600">HOME</a>
+                <a href="#about" class="block py-2 px-4 text-sm hover:bg-red-600">ABOUT US</a>
+                <a href="#rooms" class="block py-2 px-4 text-sm hover:bg-red-600">ROOMS</a>
+                <a href="#dining" class="block py-2 px-4 text-sm hover:bg-red-600">DINING</a>
+                <a href="#conference" class="block py-2 px-4 text-sm hover:bg-red-600">CONFERENCE</a>
+                <a href="#garden" class="block py-2 px-4 text-sm hover:bg-red-600">GARDEN</a>
+                <a href="#contact" class="block py-2 px-4 text-sm hover:bg-red-600">CONTACT</a>
+                <a href="#booking" class="block py-2 px-4 text-sm bg-red-600 hover:bg-red-700">BOOK NOW</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen flex items-center justify-center text-white">
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+        <div class="relative z-10 text-center px-4">
+            <h1 class="text-4xl md:text-7xl font-bold mb-4 leading-tight">WELCOME TO DIPLOMATE HOTEL</h1>
+            <p class="text-lg md:text-xl mb-8 font-light">THE PLACE WHERE YOU LOOKING TO</p>
+            <a href="#booking" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-sm transition duration-300 transform hover:scale-105">
+                EXPLORE NOW
+            </a>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="-mt-16 relative z-20">
+        <div class="container mx-auto px-6">
+            <form class="bg-white p-6 rounded-lg shadow-lg grid grid-cols-1 md:grid-cols-5 gap-4 items-end">
+                <div>
+                    <label for="check-in" class="block text-sm font-medium text-gray-700">Check-in</label>
+                    <input type="date" id="check-in" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-red-500 focus:border-red-500 sm:text-sm">
+                </div>
+                <div>
+                    <label for="check-out" class="block text-sm font-medium text-gray-700">Check-out</label>
+                    <input type="date" id="check-out" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-red-500 focus:border-red-500 sm:text-sm">
+                </div>
+                <div>
+                    <label for="room-type" class="block text-sm font-medium text-gray-700">Room Type</label>
+                    <select id="room-type" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-red-500 focus:border-red-500 sm:text-sm">
+                        <option>Deluxe Room</option>
+                        <option>Executive Suite</option>
+                        <option>Presidential Suite</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="guests" class="block text-sm font-medium text-gray-700">Guests</label>
+                    <input type="number" id="guests" value="2" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-red-500 focus:border-red-500 sm:text-sm">
+                </div>
+                <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 rounded-md">Book Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="mb-8">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-3">WELCOME TO DIPLOMATE HOTEL</h2>
+                        <div class="w-20 h-1 bg-red-600"></div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Welcome to Diplomate Hotel, where luxury meets comfort. Our hotel offers a unique blend of modern amenities and classic elegance, ensuring a memorable stay for every guest.
+                    </p>
+                    <p class="text-gray-600">
+                        Whether you're here for business or leisure, our dedicated team is here to provide you with an exceptional experience.
+                    </p>
+                </div>
+                <div>
+                    <img src="reception/1.jpg" alt="Hotel Reception" class="rounded-lg shadow-xl w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dining Section -->
+    <section id="dining" class="py-20 section-dark">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="section-title text-white">Dining & Bar</h2>
+                <div class="inline-block w-20 h-1 bg-red-600"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="restraunt/1.jpg" alt="Restaurant" class="rounded-lg shadow-lg object-cover w-full h-48">
+                    <img src="restraunt/bar.jpg" alt="Bar" class="rounded-lg shadow-lg object-cover w-full h-48">
+                    <img src="menu/breakfast.jpg" alt="Breakfast" class="rounded-lg shadow-lg object-cover w-full h-48">
+                    <img src="menu/reservation.jpg" alt="Reservation" class="rounded-lg shadow-lg object-cover w-full h-48">
+                </div>
+                <div class="text-white">
+                    <h3 class="text-2xl font-bold mb-4">A Culinary Journey</h3>
+                    <p class="mb-4">Indulge your senses at our restaurant and bar, where our expert chefs and mixologists create unforgettable culinary experiences. From gourmet dishes to handcrafted cocktails, every detail is crafted to perfection.</p>
+                    <p>We offer a diverse menu that caters to all tastes, ensuring a delightful experience for every guest. Join us for a memorable meal in a sophisticated and welcoming atmosphere.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conference Section -->
+    <section id="conference" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="section-title text-gray-800">Conference & Events</h2>
+                <div class="inline-block w-20 h-1 bg-red-600"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="text-gray-700">
+                    <h3 class="text-2xl font-bold mb-4">Host Your Perfect Event</h3>
+                    <p class="mb-4">Our hotel offers state-of-the-art conference rooms and event spaces, perfect for business meetings, weddings, and social gatherings. With our professional event planning team, we ensure every detail is taken care of, so you can focus on what matters.</p>
+                    <p>Our flexible spaces can be customized to meet your needs, and our catering services provide a wide range of options to suit any occasion.</p>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="conference/1.jpg" alt="Conference Room" class="rounded-lg shadow-lg object-cover w-full h-48">
+                    <img src="conference/2.jpg" alt="Event Setup" class="rounded-lg shadow-lg object-cover w-full h-48">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Garden Section -->
+    <section id="garden" class="py-20 section-dark">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="section-title text-white">Garden Oasis</h2>
+                <div class="inline-block w-20 h-1 bg-red-600"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="text-white">
+                    <h3 class="text-2xl font-bold mb-4">A Tranquil Retreat</h3>
+                    <p class="mb-4">Escape the hustle and bustle of the city in our serene garden oasis. Our beautifully landscaped gardens provide a peaceful and relaxing environment for our guests to unwind and reconnect with nature.</p>
+                    <p>Perfect for a morning stroll, an afternoon read, or an evening cocktail, our garden is a true hidden gem.</p>
+                </div>
+                <div class="grid grid-cols-1 gap-4">
+                    <img src="garden/WhatsApp Image 2025-10-08 at 13.29.46_dc473b04.jpg" alt="Garden" class="rounded-lg shadow-lg object-cover w-full h-64">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="py-12 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="section-title text-gray-800">Our Rooms & Suites</h2>
+                <div class="inline-block w-20 h-1 bg-red-600"></div>
+            </div>
+            <div class="masonry-grid">
+                <div class="masonry-item"><img src="rooms/IMG-20251008-WA0023.jpg" alt="Room Image"></div>
+                <div class="masonry-item"><img src="rooms/IMG-20251008-WA0020.jpg" alt="Room Image"></div>
+                <div class="masonry-item"><img src="rooms/IMG-20251008-WA0010.jpg" alt="Room Image"></div>
+                <div class="masonry-item"><img src="rooms/IMG-20251008-WA0011.jpg" alt="Room Image"></div>
+                <div class="masonry-item"><img src="rooms/IMG-20251008-WA0012.jpg" alt="Room Image"></div>
+                <div class="masonry-item"><img src="rooms/IMG-20251008-WA0013.jpg" alt="Room Image"></div>
+                <div class="masonry-item"><img src="rooms/IMG-20251008-WA0014.jpg" alt="Room Image"></div>
+                <div class="masonry-item"><img src="rooms/IMG-20251008-WA0015.jpg" alt="Room Image"></div>
+                <div class="masonry-item"><img src="rooms/IMG-20251008-WA0016.jpg" alt="Room Image"></div>
+                <div class="masonry-item"><img src="rooms/IMG-20251008-WA0017.jpg" alt="Room Image"></div>
+                <div class="masonry-item"><img src="rooms/IMG-20251008-WA0018.jpg" alt="Room Image"></div>
+                <div class="masonry-item"><img src="rooms/IMG-20251008-WA0019.jpg" alt="Room Image"></div>
+                <div class="masonry-item"><img src="rooms/IMG-20251008-WA0021.jpg" alt="Room Image"></div>
+                <div class="masonry-item"><img src="rooms/IMG-20251008-WA0022.jpg" alt="Room Image"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-900 text-white pt-20 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">ADDRESS</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                            <span>123 Luxury Street, City Center, Metropolis, 10001</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3"></i>
+                            <span>info@diplomatehotel.com</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">INFORMATION</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Delivery Information</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Terms & Conditions</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Site Map</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">MY ACCOUNT</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">My Account</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Order History</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Wish List</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Newsletter</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Returns</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">NEWSLETTER</h4>
+                    <p class="text-gray-400 mb-4">Subscribe to our newsletter for the latest news, tips, and advice.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-sm focus:outline-none text-gray-800 w-full">
+                        <button type="submit" class="bg-red-600 hover:bg-red-700 text-white px-4 rounded-r-sm">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 ArtCode</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <a href="#home" id="scrollTopBtn" class="hidden fixed bottom-8 right-8 bg-red-600 text-white w-12 h-12 rounded-full justify-center items-center shadow-lg hover:bg-red-700 transition-all duration-300 z-50">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
