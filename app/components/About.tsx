@@ -16,7 +16,7 @@ export default function About() {
               Welcome to Diplomate Hotel, where luxury meets comfort. Our hotel offers a unique blend of modern amenities and classic elegance, ensuring a memorable stay for every guest.
             </p>
             <p className="text-gray-600">
-              Whether you're here for business or leisure, our dedicated team is here to provide you with an exceptional experience.
+              Whether you&apos;re here for business or leisure, our dedicated team is here to provide you with an exceptional experience.
             </p>
           </div>
           <div>
