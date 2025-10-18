@@ -4,7 +4,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black opacity-60"></div>
       <div className="relative z-10 text-center px-4">
         <h1 className="text-4xl md:text-7xl font-bold mb-4 leading-tight">
-          WELCOME TO DIPLOMATE HOTEL
+          WELCOME TO KIGALI DIPLOMAT HOTEL
         </h1>
         <p className="text-lg md:text-xl mb-8 font-light">
           THE PLACE WHERE YOU LOOKING TO

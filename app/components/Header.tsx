@@ -2,12 +2,19 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import ContactModal from './ContactModal';
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const openContactModal = () => {
+    setIsContactModalOpen(true);
+    setIsMobileMenuOpen(false); // Close mobile menu if open
   };
 
   return (
@@ -52,9 +59,12 @@ export default function Header() {
             <a href="#conference" className="hover:text-red-500 transition">CONFERENCE</a>
             <a href="#garden" className="hover:text-red-500 transition">GARDEN</a>
             <a href="#contact" className="hover:text-red-500 transition">CONTACT</a>
-            <a href="#booking" className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-5 rounded-sm transition duration-300">
-              BOOK NOW
-            </a>
+            <button 
+              onClick={openContactModal}
+              className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-5 rounded-sm transition duration-300"
+            >
+              BOOK
+            </button>
           </div>
           <button 
             className="md:hidden text-white focus:outline-none" 
@@ -73,9 +83,20 @@ export default function Header() {
           <a href="#conference" className="block py-2 px-4 text-sm hover:bg-red-600">CONFERENCE</a>
           <a href="#garden" className="block py-2 px-4 text-sm hover:bg-red-600">GARDEN</a>
           <a href="#contact" className="block py-2 px-4 text-sm hover:bg-red-600">CONTACT</a>
-          <a href="#booking" className="block py-2 px-4 text-sm bg-red-600 hover:bg-red-700">BOOK NOW</a>
+          <button 
+            onClick={openContactModal}
+            className="block py-2 px-4 text-sm bg-red-600 hover:bg-red-700 w-full text-center"
+          >
+            BOOK
+          </button>
         </div>
       </nav>
+      
+      {/* Contact Modal */}
+      <ContactModal 
+        isOpen={isContactModalOpen} 
+        onClose={() => setIsContactModalOpen(false)} 
+      />
     </header>
   );
 }
