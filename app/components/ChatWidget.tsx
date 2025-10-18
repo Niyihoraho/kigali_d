@@ -143,7 +143,7 @@ export default function ChatWidget() {
       {/* Chat Button */}
       <button
         onClick={toggleChat}
-        className="fixed bottom-6 right-6 bg-red-600 hover:bg-red-700 text-white p-4 rounded-full shadow-lg transition-all duration-300 z-40"
+        className="fixed bottom-6 left-6 bg-red-600 hover:bg-red-700 text-white p-4 rounded-full shadow-lg transition-all duration-300 z-40"
       >
         {isOpen ? (
           <i className="fas fa-times text-xl"></i>
@@ -154,7 +154,7 @@ export default function ChatWidget() {
 
       {/* Chat Window */}
       {isOpen && (
-        <div className="fixed bottom-24 right-6 w-80 h-96 bg-white rounded-lg shadow-xl border z-50 flex flex-col">
+        <div className="fixed bottom-24 left-6 w-80 h-96 bg-white rounded-lg shadow-xl border z-50 flex flex-col">
           {/* Chat Header */}
           <div className="bg-red-600 text-white p-4 rounded-t-lg flex items-center justify-between">
             <div>
