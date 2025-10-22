@@ -105,3 +105,4 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
     </div>
   );
 }
+

@@ -8,7 +8,7 @@ export default function About() {
           <div>
             <div className="mb-8">
               <h2 className="text-3xl font-bold text-gray-800 mb-3">
-                WELCOME TO KIGALI DIPLOMAT HOTEL
+                WELCOME TO KIGALI DIPLOMATE HOTEL
               </h2>
               <div className="w-20 h-1 bg-red-600"></div>
             </div>
