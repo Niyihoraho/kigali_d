@@ -7,7 +7,6 @@ export default function ChatWidget() {
   const [messages, setMessages] = useState<Array<{id: number, text: string, isUser: boolean, timestamp: Date}>>([]);
   const [inputText, setInputText] = useState('');
   const [messageCount, setMessageCount] = useState(0);
-  const [hasWelcomed, setHasWelcomed] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   const scrollToBottom = () => {
@@ -88,7 +87,6 @@ export default function ChatWidget() {
       } else if (messageCount === 0) {
         // First message - welcome
         botResponse = "Hello! Welcome to KIGALI DIPLOMAT Hotel! 👋\n\nI'm here to help you with any questions about our hotel. How can I assist you today?\n\nWe offer:\n🏨 Rooms & Accommodation (Standard $70, Deluxe $90)\n🍽️ Dining & Restaurant\n🏢 Conference & Events\n🌿 Garden Oasis\n\nJust mention any service you're interested in!";
-        setHasWelcomed(true);
       } else if (messageCount >= 1 && messageCount < 3) {
         // Continue conversation
         botResponse = "Thank you for your message! I'm here to help with any questions about our hotel services. What would you like to know?\n\nYou can ask about:\n• Room types and pricing (Standard $70, Deluxe $90)\n• Dining and restaurant options\n• Conference and event facilities\n• Garden and outdoor spaces\n• Booking and reservations";
