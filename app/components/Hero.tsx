@@ -10,10 +10,10 @@ export default function Hero() {
           THE PLACE WHERE YOU LOOKING TO
         </p>
         <a 
-          href="#booking" 
+          href="/gallery" 
           className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-sm transition duration-300 transform hover:scale-105"
         >
-          EXPLORE NOW
+          GALLERY
         </a>
       </div>
     </section>

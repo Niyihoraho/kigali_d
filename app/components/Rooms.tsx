@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 const standardRooms = [
   'IMG-20251008-WA0010.jpg',
@@ -26,7 +27,14 @@ export default function Rooms() {
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-3">Our Rooms & Suites</h2>
-          <div className="inline-block w-20 h-1 bg-red-600"></div>
+          <div className="inline-block w-20 h-1 bg-red-600 mb-6"></div>
+          <Link 
+            href="/gallery"
+            className="inline-flex items-center bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-sm transition duration-300 transform hover:scale-105"
+          >
+            <i className="fas fa-images mr-2"></i>
+            View Full Gallery
+          </Link>
         </div>
         
         {/* Standard Rooms Section */}

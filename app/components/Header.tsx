@@ -63,6 +63,7 @@ export default function Header() {
             <a href="#home" className="text-red-500 hover:text-white transition">HOME</a>
             <a href="#about" className="hover:text-red-500 transition">ABOUT US</a>
             <a href="#rooms" className="hover:text-red-500 transition">ROOMS</a>
+            <a href="/gallery" className="hover:text-red-500 transition">GALLERY</a>
             <a href="#dining" className="hover:text-red-500 transition">DINING</a>
             <a href="#conference" className="hover:text-red-500 transition">CONFERENCE</a>
             <a href="#garden" className="hover:text-red-500 transition">GARDEN</a>
@@ -100,6 +101,7 @@ export default function Header() {
           <a href="#home" className="block py-2 px-4 text-sm hover:bg-red-600">HOME</a>
           <a href="#about" className="block py-2 px-4 text-sm hover:bg-red-600">ABOUT US</a>
           <a href="#rooms" className="block py-2 px-4 text-sm hover:bg-red-600">ROOMS</a>
+          <a href="/gallery" className="block py-2 px-4 text-sm hover:bg-red-600">GALLERY</a>
           <a href="#dining" className="block py-2 px-4 text-sm hover:bg-red-600">DINING</a>
           <a href="#conference" className="block py-2 px-4 text-sm hover:bg-red-600">CONFERENCE</a>
           <a href="#garden" className="block py-2 px-4 text-sm hover:bg-red-600">GARDEN</a>
