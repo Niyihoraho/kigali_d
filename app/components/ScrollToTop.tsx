@@ -35,7 +35,7 @@ export default function ScrollToTop() {
     >
       <Image 
         src="/logo/logo.png?v=2" 
-        alt="KIGALI DIPLOMAT Hotel Logo" 
+        alt="KIGALI DIPLOMATE Hotel Logo" 
         width={28} 
         height={28}
         className="rounded-full transition-transform duration-300 group-hover:scale-110"

@@ -50,7 +50,7 @@ export default function Contact() {
                     <i className="fas fa-hashtag text-red-500 mr-3"></i>
                     <div>
                       <p className="font-medium">Follow us on all social media:</p>
-                      <p className="text-gray-300">KIGALI DIPLOMAT Hotel</p>
+                      <p className="text-gray-300">KIGALI DIPLOMATE Hotel</p>
                     </div>
                   </div>
                   
@@ -87,7 +87,7 @@ export default function Contact() {
         </div>
         
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; 2025 KIGALI DIPLOMAT Hotel. All rights reserved.</p>
+          <p>&copy; 2025 KIGALI DIPLOMATE Hotel. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -48,14 +48,14 @@ export default function Gallery() {
             <Link href="/" className="flex items-center group">
               <Image 
                 src="/logo/logo.png" 
-                alt="KIGALI DIPLOMAT Hotel Logo" 
+                alt="KIGALI DIPLOMATE Hotel Logo" 
                 width={48} 
                 height={48}
                 className="mr-3 transition-transform duration-300 group-hover:scale-105"
               />
               <div>
                 <h1 className="text-xl font-bold text-gray-800 group-hover:text-red-600 transition-colors duration-300">
-                  KIGALI DIPLOMAT
+                  KIGALI DIPLOMATE
                 </h1>
                 <p className="text-xs text-gray-500 font-medium">
                   HOTEL

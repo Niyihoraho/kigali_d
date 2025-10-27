@@ -23,7 +23,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
           <div className="flex items-center justify-between p-6 border-b">
             <div>
               <h2 className="text-2xl font-bold text-gray-900">Book Your Stay</h2>
-              <p className="text-sm text-gray-600 mt-1">KIGALI DIPLOMAT Hotel</p>
+              <p className="text-sm text-gray-600 mt-1">KIGALI DIPLOMATE Hotel</p>
             </div>
             <button
               onClick={onClose}

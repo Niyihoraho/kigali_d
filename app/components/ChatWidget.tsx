@@ -49,7 +49,7 @@ export default function ChatWidget() {
     const serviceResponses = {
       'rooms': `🏨 **ROOMS & ACCOMMODATION**\n\nWe offer comfortable accommodations:\n\n• **Standard Rooms** - $70/night\n  Perfect for business travelers and short stays\n\n• **Deluxe Rooms** - $90/night\n  Spacious and elegantly designed for leisure travelers\n\nFor room availability and booking:\n📞 +250782083001 / 252581330\n📧 Hotel.dipolmat@yahoo.com`,
       
-      'dining': `🍽️ **DINING & BAR**\n\nA Culinary Journey at KIGALI DIPLOMAT Hotel:\n\n• **Restaurant** - Expert chefs create unforgettable culinary experiences\n• **Bar** - Handcrafted cocktails and premium drinks\n• **Breakfast** - Available for guests\n• **Reservations** - Book your dining experience\n\nWe offer:\n✓ Gourmet dishes crafted to perfection\n✓ Diverse menu for all tastes\n✓ Sophisticated and welcoming atmosphere\n✓ Memorable dining experiences\n\nFor dining reservations:\n📞 +250782083001 / 252581330\n📧 Hotel.dipolmat@yahoo.com`,
+      'dining': `🍽️ **DINING & BAR**\n\nA Culinary Journey at KIGALI DIPLOMATE Hotel:\n\n• **Restaurant** - Expert chefs create unforgettable culinary experiences\n• **Bar** - Handcrafted cocktails and premium drinks\n• **Breakfast** - Available for guests\n• **Reservations** - Book your dining experience\n\nWe offer:\n✓ Gourmet dishes crafted to perfection\n✓ Diverse menu for all tastes\n✓ Sophisticated and welcoming atmosphere\n✓ Memorable dining experiences\n\nFor dining reservations:\n📞 +250782083001 / 252581330\n📧 Hotel.dipolmat@yahoo.com`,
       
       'conference': `🏢 **CONFERENCE & EVENTS**\n\nHost Your Perfect Event:\n\n• **Conference Rooms** - State-of-the-art meeting spaces\n• **Event Spaces** - Perfect for business meetings, weddings, and social gatherings\n• **Professional Event Planning Team** - We ensure every detail is taken care of\n• **Flexible Spaces** - Can be customized to meet your needs\n• **Catering Services** - Wide range of options to suit any occasion\n\nFor event planning:\n📞 +250782083001 / 252581330\n📧 Hotel.dipolmat@yahoo.com`,
       
@@ -86,13 +86,13 @@ export default function ChatWidget() {
         botResponse = getServiceResponse(detectedService);
       } else if (messageCount === 0) {
         // First message - welcome
-        botResponse = "Hello! Welcome to KIGALI DIPLOMAT Hotel! 👋\n\nI'm here to help you with any questions about our hotel. How can I assist you today?\n\nWe offer:\n🏨 Rooms & Accommodation (Standard $70, Deluxe $90)\n🍽️ Dining & Restaurant\n🏢 Conference & Events\n🌿 Garden Oasis\n\nJust mention any service you're interested in!";
+        botResponse = "Hello! Welcome to KIGALI DIPLOMATE Hotel! 👋\n\nI'm here to help you with any questions about our hotel. How can I assist you today?\n\nWe offer:\n🏨 Rooms & Accommodation (Standard $70, Deluxe $90)\n🍽️ Dining & Restaurant\n🏢 Conference & Events\n🌿 Garden Oasis\n\nJust mention any service you're interested in!";
       } else if (messageCount >= 1 && messageCount < 3) {
         // Continue conversation
         botResponse = "Thank you for your message! I'm here to help with any questions about our hotel services. What would you like to know?\n\nYou can ask about:\n• Room types and pricing (Standard $70, Deluxe $90)\n• Dining and restaurant options\n• Conference and event facilities\n• Garden and outdoor spaces\n• Booking and reservations";
       } else {
         // Direct to contact after multiple messages
-        botResponse = "I appreciate your interest in KIGALI DIPLOMAT Hotel! 😊\n\nFor personalized assistance and booking inquiries, please contact us directly:\n\n📞 Phone: +250782083001 / 252581330\n📧 Email: Hotel.dipolmat@yahoo.com\n💬 WhatsApp: +250782083001\n📍 Address: KG566St/2, Kigali, Rwanda\n\nOur team is ready to help you with your booking!";
+        botResponse = "I appreciate your interest in KIGALI DIPLOMATE Hotel! 😊\n\nFor personalized assistance and booking inquiries, please contact us directly:\n\n📞 Phone: +250782083001 / 252581330\n📧 Email: Hotel.dipolmat@yahoo.com\n💬 WhatsApp: +250782083001\n📍 Address: KG566St/2, Kigali, Rwanda\n\nOur team is ready to help you with your booking!";
       }
 
       const botMessage = {
@@ -141,7 +141,7 @@ export default function ChatWidget() {
           {/* Chat Header */}
           <div className="bg-red-600 text-white p-4 rounded-t-lg flex items-center justify-between">
             <div>
-              <h3 className="font-semibold">KIGALI DIPLOMAT Hotel</h3>
+              <h3 className="font-semibold">KIGALI DIPLOMATE Hotel</h3>
               <p className="text-xs opacity-90">Online Assistant</p>
             </div>
             <div className="flex items-center">

@@ -9,8 +9,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "KIGALI DIPLOMAT Hotel - Luxury Stay & Hospitality",
-  description: "Experience luxury and comfort at KIGALI DIPLOMAT Hotel. Book your stay at our premium hotel with world-class amenities and services.",
+  title: "KIGALI DIPLOMATE Hotel - Luxury Stay & Hospitality",
+  description: "Experience luxury and comfort at KIGALI DIPLOMATE Hotel. Book your stay at our premium hotel with world-class amenities and services.",
   icons: {
     icon: '/logo/logo.png',
     shortcut: '/logo/logo.png',
