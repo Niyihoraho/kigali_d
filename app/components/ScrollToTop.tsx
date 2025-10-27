@@ -29,16 +29,16 @@ export default function ScrollToTop() {
   return (
     <button
       onClick={scrollToTop}
-      className={`fixed bottom-8 right-8 bg-white text-white w-12 h-12 rounded-full flex justify-center items-center shadow-lg hover:bg-gray-100 transition-all duration-300 z-50 ${
+      className={`fixed bottom-8 right-8 bg-red-600 hover:bg-red-700 text-white w-14 h-14 rounded-full flex justify-center items-center shadow-lg hover:shadow-xl transition-all duration-300 z-50 group ${
         isVisible ? 'block' : 'hidden'
       }`}
     >
       <Image 
         src="/logo/logo.png" 
-        alt="Diplomate Hotel Logo" 
-        width={32} 
-        height={32}
-        className="rounded-full"
+        alt="KIGALI DIPLOMAT Hotel Logo" 
+        width={28} 
+        height={28}
+        className="rounded-full transition-transform duration-300 group-hover:scale-110"
       />
     </button>
   );

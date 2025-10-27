@@ -37,7 +37,7 @@ export default function Contact() {
                     <i className="fas fa-envelope text-red-500 mr-3"></i>
                     <div>
                       <p className="font-medium">Email:</p>
-                      <p className="text-gray-300">Hotel.dipolmat@gmail.com</p>
+                      <p className="text-gray-300">Hotel.dipolmat@yahoo.com</p>
                     </div>
                   </div>
                 </div>

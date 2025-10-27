@@ -34,7 +34,7 @@ export default function Header() {
             </a>
           </div>
           <div className="flex items-center space-x-4">
-            <a href="#" className="hover:text-red-500 transition">Login / Signup</a>
+            <a href="#" className="hover:text-red-500 transition"></a>
           </div>
         </div>
       </div>
@@ -42,14 +42,22 @@ export default function Header() {
       {/* Main navigation */}
       <nav className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
-          <a href="#home" className="flex items-center">
+          <a href="#home" className="flex items-center group">
             <Image 
               src="/logo/logo.png" 
-              alt="Diplomate Hotel Logo" 
-              width={48} 
-              height={48}
-              className="mr-3"
+              alt="KIGALI DIPLOMAT Hotel Logo" 
+              width={56} 
+              height={56}
+              className="mr-3 transition-transform duration-300 group-hover:scale-105"
             />
+            <div className="hidden sm:block">
+              <h1 className="text-xl font-bold text-white group-hover:text-red-400 transition-colors duration-300">
+                KIGALI DIPLOMAT
+              </h1>
+              <p className="text-xs text-gray-300 font-medium">
+                HOTEL
+              </p>
+            </div>
           </a>
           <div className="hidden md:flex items-center space-x-6 text-sm font-medium">
             <a href="#home" className="text-red-500 hover:text-white transition">HOME</a>
@@ -76,6 +84,19 @@ export default function Header() {
         
         {/* Mobile menu */}
         <div className={`md:hidden mt-4 bg-black bg-opacity-90 rounded ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
+          <div className="flex items-center px-4 py-3 border-b border-gray-700">
+            <Image 
+              src="/logo/logo.png" 
+              alt="KIGALI DIPLOMAT Hotel Logo" 
+              width={32} 
+              height={32}
+              className="mr-3"
+            />
+            <div>
+              <h2 className="text-sm font-bold text-white">KIGALI DIPLOMAT</h2>
+              <p className="text-xs text-gray-300">HOTEL</p>
+            </div>
+          </div>
           <a href="#home" className="block py-2 px-4 text-sm hover:bg-red-600">HOME</a>
           <a href="#about" className="block py-2 px-4 text-sm hover:bg-red-600">ABOUT US</a>
           <a href="#rooms" className="block py-2 px-4 text-sm hover:bg-red-600">ROOMS</a>

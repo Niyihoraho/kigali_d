@@ -48,13 +48,13 @@ export default function ChatWidget() {
 
   const getServiceResponse = (service: string): string => {
     const serviceResponses = {
-      'rooms': `🏨 **ROOMS & ACCOMMODATION**\n\nWe offer comfortable accommodations:\n\n• **Standard Rooms** - $70/night\n  Perfect for business travelers and short stays\n\n• **Deluxe Rooms** - $90/night\n  Spacious and elegantly designed for leisure travelers\n\nFor room availability and booking:\n📞 +250782083001 / 252581330\n📧 Hotel.dipolmat@gmail.com`,
+      'rooms': `🏨 **ROOMS & ACCOMMODATION**\n\nWe offer comfortable accommodations:\n\n• **Standard Rooms** - $70/night\n  Perfect for business travelers and short stays\n\n• **Deluxe Rooms** - $90/night\n  Spacious and elegantly designed for leisure travelers\n\nFor room availability and booking:\n📞 +250782083001 / 252581330\n📧 Hotel.dipolmat@yahoo.com`,
       
-      'dining': `🍽️ **DINING & BAR**\n\nA Culinary Journey at KIGALI DIPLOMAT Hotel:\n\n• **Restaurant** - Expert chefs create unforgettable culinary experiences\n• **Bar** - Handcrafted cocktails and premium drinks\n• **Breakfast** - Available for guests\n• **Reservations** - Book your dining experience\n\nWe offer:\n✓ Gourmet dishes crafted to perfection\n✓ Diverse menu for all tastes\n✓ Sophisticated and welcoming atmosphere\n✓ Memorable dining experiences\n\nFor dining reservations:\n📞 +250782083001 / 252581330\n📧 Hotel.dipolmat@gmail.com`,
+      'dining': `🍽️ **DINING & BAR**\n\nA Culinary Journey at KIGALI DIPLOMAT Hotel:\n\n• **Restaurant** - Expert chefs create unforgettable culinary experiences\n• **Bar** - Handcrafted cocktails and premium drinks\n• **Breakfast** - Available for guests\n• **Reservations** - Book your dining experience\n\nWe offer:\n✓ Gourmet dishes crafted to perfection\n✓ Diverse menu for all tastes\n✓ Sophisticated and welcoming atmosphere\n✓ Memorable dining experiences\n\nFor dining reservations:\n📞 +250782083001 / 252581330\n📧 Hotel.dipolmat@yahoo.com`,
       
-      'conference': `🏢 **CONFERENCE & EVENTS**\n\nHost Your Perfect Event:\n\n• **Conference Rooms** - State-of-the-art meeting spaces\n• **Event Spaces** - Perfect for business meetings, weddings, and social gatherings\n• **Professional Event Planning Team** - We ensure every detail is taken care of\n• **Flexible Spaces** - Can be customized to meet your needs\n• **Catering Services** - Wide range of options to suit any occasion\n\nFor event planning:\n📞 +250782083001 / 252581330\n📧 Hotel.dipolmat@gmail.com`,
+      'conference': `🏢 **CONFERENCE & EVENTS**\n\nHost Your Perfect Event:\n\n• **Conference Rooms** - State-of-the-art meeting spaces\n• **Event Spaces** - Perfect for business meetings, weddings, and social gatherings\n• **Professional Event Planning Team** - We ensure every detail is taken care of\n• **Flexible Spaces** - Can be customized to meet your needs\n• **Catering Services** - Wide range of options to suit any occasion\n\nFor event planning:\n📞 +250782083001 / 252581330\n📧 Hotel.dipolmat@yahoo.com`,
       
-      'garden': `🌿 **GARDEN OASIS**\n\nA Tranquil Retreat:\n\n• **Beautiful Landscaped Gardens** - Peaceful and relaxing environment\n• **Escape from City Hustle** - Unwind and reconnect with nature\n• **Perfect for** - Morning strolls, afternoon reading, or evening cocktails\n• **Hidden Gem** - True tranquility in the city\n\nFor garden information:\n📞 +250782083001 / 252581330\n📧 Hotel.dipolmat@gmail.com`
+      'garden': `🌿 **GARDEN OASIS**\n\nA Tranquil Retreat:\n\n• **Beautiful Landscaped Gardens** - Peaceful and relaxing environment\n• **Escape from City Hustle** - Unwind and reconnect with nature\n• **Perfect for** - Morning strolls, afternoon reading, or evening cocktails\n• **Hidden Gem** - True tranquility in the city\n\nFor garden information:\n📞 +250782083001 / 252581330\n📧 Hotel.dipolmat@yahoo.com`
     };
 
     return serviceResponses[service as keyof typeof serviceResponses] || '';
@@ -94,7 +94,7 @@ export default function ChatWidget() {
         botResponse = "Thank you for your message! I'm here to help with any questions about our hotel services. What would you like to know?\n\nYou can ask about:\n• Room types and pricing (Standard $70, Deluxe $90)\n• Dining and restaurant options\n• Conference and event facilities\n• Garden and outdoor spaces\n• Booking and reservations";
       } else {
         // Direct to contact after multiple messages
-        botResponse = "I appreciate your interest in KIGALI DIPLOMAT Hotel! 😊\n\nFor personalized assistance and booking inquiries, please contact us directly:\n\n📞 Phone: +250782083001 / 252581330\n📧 Email: Hotel.dipolmat@gmail.com\n💬 WhatsApp: +250782083001\n📍 Address: KG566St/2, Kigali, Rwanda\n\nOur team is ready to help you with your booking!";
+        botResponse = "I appreciate your interest in KIGALI DIPLOMAT Hotel! 😊\n\nFor personalized assistance and booking inquiries, please contact us directly:\n\n📞 Phone: +250782083001 / 252581330\n📧 Email: Hotel.dipolmat@yahoo.com\n💬 WhatsApp: +250782083001\n📍 Address: KG566St/2, Kigali, Rwanda\n\nOur team is ready to help you with your booking!";
       }
 
       const botMessage = {

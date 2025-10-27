@@ -65,7 +65,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                   <i className="fas fa-envelope text-red-500 text-xl mr-4"></i>
                   <div>
                     <p className="font-semibold text-gray-900">Email</p>
-                    <p className="text-gray-600">Hotel.dipolmat@gmail.com</p>
+                    <p className="text-gray-600">Hotel.dipolmat@yahoo.com</p>
                   </div>
                 </div>
               </div>
@@ -91,7 +91,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                 </a>
                 
                 <a 
-                  href="mailto:Hotel.dipolmat@gmail.com?subject=Room Booking Inquiry"
+                  href="mailto:Hotel.dipolmat@yahoo.com?subject=Room Booking Inquiry"
                   className="flex items-center justify-center bg-gray-500 hover:bg-gray-600 text-white p-3 rounded-lg transition"
                 >
                   <i className="fas fa-envelope mr-2"></i>
