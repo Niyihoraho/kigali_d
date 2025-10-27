@@ -34,7 +34,7 @@ export default function ScrollToTop() {
       }`}
     >
       <Image 
-        src="/logo/logo.png" 
+        src="/logo/logo.png?v=2" 
         alt="KIGALI DIPLOMAT Hotel Logo" 
         width={28} 
         height={28}

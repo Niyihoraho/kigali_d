@@ -44,7 +44,7 @@ export default function Header() {
         <div className="flex justify-between items-center">
           <a href="#home" className="flex items-center group">
             <Image 
-              src="/logo/logo.png" 
+              src="/logo/logo.png?v=2" 
               alt="KIGALI DIPLOMAT Hotel Logo" 
               width={56} 
               height={56}
@@ -87,7 +87,7 @@ export default function Header() {
         <div className={`md:hidden mt-4 bg-black bg-opacity-90 rounded ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
           <div className="flex items-center px-4 py-3 border-b border-gray-700">
             <Image 
-              src="/logo/logo.png" 
+              src="/logo/logo.png?v=2" 
               alt="KIGALI DIPLOMAT Hotel Logo" 
               width={32} 
               height={32}
